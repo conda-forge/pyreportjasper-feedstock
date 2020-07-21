@@ -1,18 +1,18 @@
 {% set name = "pyreportjasper" %}
-{% set version = "1.0.2" %}
+{% set version = "2.0.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e7168e4a75518db66bc720d2359b789967eeb8e06fc7514e4825438864eb6a8
+  sha256: a5d5e974fac3df66beadb6a055097e64979270a0a81781285fd9ce53eb712eb5
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
