@@ -1,13 +1,13 @@
 {% set name = "pyreportjasper" %}
-{% set version = "1.0.2" %}
+{% set version = "2.1.0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e7168e4a75518db66bc720d2359b789967eeb8e06fc7514e4825438864eb6a8
+  url: https://github.com/acesseonline/pyreportjasper/archive/{{ version }}.tar.gz
+  sha256: 6cf62f9f0c8f3a0f16fa7f24446acf0e036e10db5581e85346cca61b888c77a0
 
 build:
   noarch: python
@@ -27,12 +27,13 @@ test:
     - test
 
 about:
-  home: https://github.com/PyReportJasper/pyreportjasper
-  license: MIT
-  license_family: MIT
+  home: https://pyreportjasper.readthedocs.io
+  license: GPL3
+  license_family: GPL3
   license_file: LICENSE.txt
   summary: This package aims to be a solution to compile and process JasperReports (.jrxml & .jasper files).
-
+  
+  
 extra:
   recipe-maintainers:
     - Matt-BF
