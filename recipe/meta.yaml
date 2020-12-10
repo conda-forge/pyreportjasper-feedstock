@@ -18,22 +18,21 @@ requirements:
   host:
     - pip
     - python
+    - jpype1
   run:
     - python
-
-test:
-  imports:
-    - pyreportjasper
-    - test
+    - jpype1
 
 about:
   home: https://pyreportjasper.readthedocs.io
-  license: GPL3
-  license_family: GPL3
+  license: 	GPL-3.0+
+  license_family: GPL-3.0+
   license_file: LICENSE.txt
   summary: This package aims to be a solution to compile and process JasperReports (.jrxml & .jasper files).
+  doc_url: https://pyreportjasper.readthedocs.io
+  dev_url: https://github.com/acesseonline/pyreportjasper 
   
   
 extra:
   recipe-maintainers:
-    - Matt-BF
+    - jadsonbr
