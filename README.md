@@ -1,9 +1,9 @@
 About pyreportjasper
 ====================
 
-Home: https://github.com/PyReportJasper/pyreportjasper
+Home: https://github.com/acesseonline/pyreportjasper
 
-Package license: MIT
+Package license: GPLv3
 
 Feedstock license: BSD 3-Clause
 
