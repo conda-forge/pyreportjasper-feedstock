@@ -1,5 +1,5 @@
 {% set name = "pyreportjasper" %}
-{% set version = "1.0.2" %}
+{% set version = "2.1.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -27,12 +27,13 @@ test:
     - test
 
 about:
-  home: https://github.com/PyReportJasper/pyreportjasper
-  license: MIT
-  license_family: MIT
+  home: https://github.com/acesseonline/pyreportjasper
+  license: GPL3
+  license_family: GPL3
   license_file: LICENSE.txt
   summary: This package aims to be a solution to compile and process JasperReports (.jrxml & .jasper files).
 
 extra:
   recipe-maintainers:
     - Matt-BF
+    - acesseonline
