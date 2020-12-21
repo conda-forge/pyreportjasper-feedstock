@@ -18,16 +18,13 @@ requirements:
   host:
     - pip
     - python
+    - jpype1
   run:
     - python
-
-test:
-  imports:
-    - pyreportjasper
-    - test
+    - jpype1
 
 about:
-  home: https://github.com/PyReportJasper/pyreportjasper
+  home: https://github.com/acesseonline/pyreportjasper
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
@@ -36,3 +33,4 @@ about:
 extra:
   recipe-maintainers:
     - Matt-BF
+    - acesseonline
