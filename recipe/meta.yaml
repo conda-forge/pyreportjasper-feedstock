@@ -22,6 +22,11 @@ requirements:
   run:
     - python
     - jpype1
+    
+test:
+  imports:
+    - pyreportjasper
+    - test    
 
 about:
   home: https://github.com/acesseonline/pyreportjasper
