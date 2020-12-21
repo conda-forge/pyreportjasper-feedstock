@@ -115,4 +115,5 @@ Feedstock Maintainers
 =====================
 
 * [@Matt-BF](https://github.com/Matt-BF/)
+* [@Acesseonline](https://github.com/acesseonline/)
 
