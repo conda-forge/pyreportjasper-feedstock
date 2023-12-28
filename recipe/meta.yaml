@@ -1,5 +1,5 @@
 {% set name = "pyreportjasper" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c1597d5d62fc22a1ba3672d44f24fa810e76884dc275e7ce2ca6c7c1f8c87b6d
+  sha256: 26b170a7508b660e5a9ba8c1872ffa00c1b2da66e6cae284063666bed0d09b1f
 
 build:
   noarch: python
@@ -22,11 +22,11 @@ requirements:
   run:
     - python
     - jpype1
-    
+
 test:
   imports:
     - pyreportjasper
-    - test    
+    - test
 
 about:
   home: https://github.com/acesseonline/pyreportjasper
