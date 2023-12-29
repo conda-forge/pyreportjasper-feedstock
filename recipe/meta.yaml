@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python>=3.6
     - jpype1
   run:
-    - python
+    - python>=3.6
     - jpype1
 
 test:
@@ -38,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - acesseonline
+    - Matt-BF
