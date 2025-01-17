@@ -6,24 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 26b170a7508b660e5a9ba8c1872ffa00c1b2da66e6cae284063666bed0d09b1f
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - jpype1
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - jpype1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyreportjasper
     - test
